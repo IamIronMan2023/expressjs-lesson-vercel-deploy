@@ -2,10 +2,11 @@
   "name": "lesson2",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon server.js"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "keywords": [],
   "author": "",
