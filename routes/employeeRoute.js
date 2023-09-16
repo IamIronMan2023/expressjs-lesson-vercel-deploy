@@ -10,7 +10,7 @@ import auth from "../middlewares/auth.js";
 
 const router = express.Router();
 
-router.get("/", auth, getAllEmployees);
+router.get("/", getAllEmployees);
 
 router.get("/:id", getEmployee);
 
