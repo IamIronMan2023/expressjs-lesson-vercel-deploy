@@ -28,12 +28,12 @@ try {
   console.log(error);
 }
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-  //res.status(500).send("Hello World!");
-  //Default is 200
-  //res.json({ message: "Hello", sender: "Juan Dela Cruz" });
-});
+//app.get("/", (req, res) => {
+//  res.send("Hello World!");
+//res.status(500).send("Hello World!");
+//Default is 200
+//res.json({ message: "Hello", sender: "Juan Dela Cruz" });
+//});
 
 //------- Middlewares
 //custom logger middleware
