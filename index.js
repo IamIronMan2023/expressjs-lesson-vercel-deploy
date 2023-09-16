@@ -5,6 +5,8 @@ import "dotenv/config";
 import employeeRoutes from "./routes/employeeRoute.js";
 import userRoutes from "./routes/userRoutes.js";
 import logger from "./middlewares/logger.js";
+import path from "path";
+import { fileURLToPath } from "url";
 
 //Start creating app
 const app = express();
@@ -36,6 +38,10 @@ app.get("/", (req, res) => {
 //------- Middlewares
 //custom logger middleware
 // app.use(logger);
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+app.use(express.static(path.join(__dirname, "public")));
 
 //allows server to accept json
 app.use(express.json());
