@@ -8,9 +8,9 @@ import auth from "../middlewares/auth.js";
 
 const router = express.Router();
 
-router.post("/", auth, createUser);
+router.post("/", createUser);
 
 router.post("/login", loginUser);
-router.post("/logout", auth, logoutUser);
+router.post("/logout", logoutUser);
 
 export default router;
